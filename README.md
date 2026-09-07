@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Rachel Rubin Hershler — Portfolio
 
-## Getting Started
+Personal site: semantic HTML, sitemap, robots.txt, Open Graph, and Person structured data.
 
-First, run the development server:
+- GitHub: https://github.com/hershler/portfolio
+- Live site (after Netlify): https://rachel-rubin-hershler.netlify.app
+
+## Run locally
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deploy on Netlify
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Sign in to [Netlify](https://app.netlify.com) with GitHub.
+2. **Add new site → Import an existing project** and choose `hershler/portfolio`.
+3. Leave the Next.js defaults (build command `npm run build`).
+4. Before the first deploy, open **Site configuration → Domain management → Options → Change site name** and set it to `rachel-rubin-hershler`.
+5. Add this environment variable in Netlify:
+   ```
+   NEXT_PUBLIC_SITE_URL=https://rachel-rubin-hershler.netlify.app
+   ```
+6. Trigger a redeploy so sitemap and canonical URLs use the live address.
 
-## Learn More
+## Make it show up on Google
 
-To learn more about Next.js, take a look at the following resources:
+1. In [Google Search Console](https://search.google.com/search-console), add the live URL, verify, and submit `https://rachel-rubin-hershler.netlify.app/sitemap.xml`.
+2. Optional: connect a custom domain (`rachelhershler.com` or similar) — a personal name domain is clearer than a subdomain.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Google will not list a site that only runs on your laptop. Indexing usually takes days after a public deploy and sitemap submit.
