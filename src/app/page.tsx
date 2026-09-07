@@ -32,20 +32,25 @@ const amdocsPoints = [
 const projects = [
   {
     title: "CPP Under the Hood",
+    href: "https://github.com/hershler/CPP-Under-The-Hood",
     tags: "C++ · C",
     text: "Converted a C++ program into equivalent C to make object-oriented mechanics — vtables, construction, and memory — fully explicit.",
   },
   {
     title: "Mobileye project",
+    href: "https://github.com/hershler/Mobileye-Project",
     tags: "Python · MATLAB",
     text: "Detected traffic lights in video and estimated distance using image processing and machine learning.",
   },
   {
     title: "Google autocomplete",
+    href: "https://github.com/hershler/google-project",
     tags: "Python",
     text: "Implemented autocomplete with compact data structures and algorithmic optimizations over large dictionaries.",
   },
 ];
+
+const advaBadgeUrl = "https://www.credly.com/users/rachel-hershler/badges";
 
 export default function Home() {
   return (
@@ -211,11 +216,24 @@ export default function Home() {
                   <p className="mono text-[11px] text-copper">
                     0{index + 1}
                   </p>
-                  <h3 className="display mt-6 text-3xl">{project.title}</h3>
+                  <h3 className="display mt-6 text-3xl">
+                    <a
+                      href={project.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="link-invert"
+                    >
+                      {project.title}
+                      <span aria-hidden="true"> ↗</span>
+                    </a>
+                  </h3>
                   <p className="mono mt-2 text-xs tracking-wide text-mist">
                     {project.tags}
                   </p>
                   <p className="mt-6 leading-7 text-paper/75">{project.text}</p>
+                  <p className="mono mt-6 text-[11px] tracking-[0.18em] uppercase text-mist">
+                    View on GitHub
+                  </p>
                 </article>
               ))}
             </div>
@@ -237,7 +255,17 @@ export default function Home() {
                 and a Mahat study certificate. Core mathematics and computer
                 science at bachelor level, in cooperation with Tel Aviv
                 University, the Hebrew University, and Ben-Gurion University.
-                Adva Badge.
+              </p>
+              <p className="mt-6">
+                <a
+                  href={advaBadgeUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="link text-lg"
+                >
+                  Adva Badge
+                  <span aria-hidden="true"> ↗</span>
+                </a>
               </p>
             </div>
           </div>

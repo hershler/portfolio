@@ -80,15 +80,45 @@ export default function ResumePage() {
         </h2>
         <ul className="mt-3 space-y-3 leading-7 text-ink-soft">
           <li>
-            <strong className="text-ink"><a href="https://github.com/hershler/CPP-Under-The-Hood" target="_blank" rel="noopener noreferrer">CPP Under the Hood</a></strong> — C++
+            <strong>
+              <a
+                href="https://github.com/hershler/CPP-Under-The-Hood"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link"
+              >
+                CPP Under the Hood
+                <span aria-hidden="true"> ↗</span>
+              </a>
+            </strong> — C++
             program converted to C to expose OOP internals.
           </li>
           <li>
-            <strong className="text-ink"><a href="https://github.com/hershler/Mobileye-Project" target="_blank" rel="noopener noreferrer">Mobileye project</a></strong> — traffic-light
+            <strong>
+              <a
+                href="https://github.com/hershler/Mobileye-Project"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link"
+              >
+                Mobileye project
+                <span aria-hidden="true"> ↗</span>
+              </a>
+            </strong> — traffic-light
             detection and distance estimation with Python and MATLAB.
           </li>
           <li>
-            <strong className="text-ink"><a href="https://github.com/hershler/google-project" target="_blank" rel="noopener noreferrer">Google autocomplete</a></strong> — Python
+            <strong>
+              <a
+                href="https://github.com/hershler/google-project"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link"
+              >
+                Google autocomplete
+                <span aria-hidden="true"> ↗</span>
+              </a>
+            </strong> — Python
             autocomplete with advanced data structures.
           </li>
         </ul>
@@ -101,7 +131,18 @@ export default function ResumePage() {
         <h3 className="mt-3 text-lg font-medium">
           Adva Program by Scale-Up Velocity
         </h3>
-        <p className="mono text-sm text-ink-soft">2018 — 2020 · GPA 95 · <a href="https://www.credly.com/users/rachel-hershler/badges" target="_blank" rel="noopener noreferrer">Adva Badge</a></p>
+        <p className="mono text-sm text-ink-soft">
+          2018 — 2020 · GPA 95 ·{" "}
+          <a
+            href="https://www.credly.com/users/rachel-hershler/badges"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link"
+          >
+            Adva Badge
+            <span aria-hidden="true"> ↗</span>
+          </a>
+        </p>
         <p className="mt-3 leading-7 text-ink-soft">
           Two-and-a-half-year training with Scale-Up Velocity and Mahat
           certificate. Bachelor-level math and computer science with TAU, the
