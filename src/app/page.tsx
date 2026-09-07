@@ -1,3 +1,4 @@
+import { ContactForm } from "@/components/ContactForm";
 import { Header } from "@/components/Header";
 import { site } from "@/lib/site";
 
@@ -252,24 +253,29 @@ export default function Home() {
             </h2>
             <p className="mt-6 max-w-xl text-lg text-paper/80">
               For roles, collaborations, or a conversation about backend
-              systems — write or call. I read everything myself.
+              systems — write here, email, or call. I read everything myself.
             </p>
-            <div className="mt-12 flex flex-col gap-6">
-              <a
-                href={`mailto:${site.email}`}
-                className="display text-3xl underline decoration-copper decoration-2 underline-offset-8 md:text-5xl"
-              >
-                {site.email}
-              </a>
-              <a
-                href={`tel:${site.phone}`}
-                className="display text-2xl md:text-4xl"
-              >
-                {site.phoneDisplay}
-              </a>
-              <p className="mono text-sm tracking-wide text-paper/70">
-                {site.location}
-              </p>
+            <div className="mt-12 grid items-start gap-12 xl:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] xl:gap-16">
+              <div className="flex min-w-0 flex-col gap-6">
+                <a
+                  href={`mailto:${site.email}`}
+                  className="display break-all text-2xl underline decoration-copper decoration-2 underline-offset-8 sm:text-3xl 2xl:text-4xl"
+                >
+                  {site.email}
+                </a>
+                <a
+                  href={`tel:${site.phone}`}
+                  className="display text-2xl md:text-3xl"
+                >
+                  {site.phoneDisplay}
+                </a>
+                <p className="mono text-sm tracking-wide text-paper/70">
+                  {site.location}
+                </p>
+              </div>
+              <div className="min-w-0">
+                <ContactForm />
+              </div>
             </div>
           </div>
         </section>

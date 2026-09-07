@@ -1,9 +1,12 @@
 # Rachel Rubin Hershler — Portfolio
 
-Personal site: semantic HTML, sitemap, robots.txt, Open Graph, and Person structured data.
+Personal site for Rachel Rubin Hershler, a backend developer in Israel.
 
-- GitHub: https://github.com/hershler/portfolio
-- Live site (after Netlify): https://rachel-rubin.netlify.app
+The homepage covers profile, work at Amdocs and Elevation Academy, selected projects, education, and contact. Visitors can email or call, or send a note from the contact form — it is delivered to Gmail. A resume page lives at `/resume`.
+
+The site uses semantic HTML, a sitemap, robots.txt, Open Graph images, and Person structured data.
+
+GitHub: https://github.com/hershler/portfolio
 
 ## Run locally
 
@@ -12,22 +15,3 @@ npm run dev
 ```
 
 Open http://localhost:3000
-
-## Deploy on Netlify
-
-1. Sign in to [Netlify](https://app.netlify.com) with GitHub.
-2. **Add new site → Import an existing project** and choose `hershler/portfolio`.
-3. Leave the Next.js defaults (build command `npm run build`).
-4. Before the first deploy, open **Site configuration → Domain management → Options → Change site name** and set it to `rachel-rubin`.
-5. Add this environment variable in Netlify:
-   ```
-   NEXT_PUBLIC_SITE_URL=https://rachel-rubin.netlify.app
-   ```
-6. Trigger a redeploy so sitemap and canonical URLs use the live address.
-
-## Make it show up on Google
-
-1. In [Google Search Console](https://search.google.com/search-console), add the live URL, verify, and submit `https://rachel-rubin.netlify.app/sitemap.xml`.
-2. Optional: connect a custom domain (`rachelhershler.com` or similar) — a personal name domain is clearer than a subdomain.
-
-Google will not list a site that only runs on your laptop. Indexing usually takes days after a public deploy and sitemap submit.

@@ -33,6 +33,7 @@ AGENTS.md
 CLAUDE.md
 
 # leftover create-next-app assets (unused)
-public/
+public/*
+!public/__forms.html
 src/app/favicon.ico
 eslint.config.mjs
