@@ -6,12 +6,4 @@ The homepage covers profile, work at Amdocs and Elevation Academy, selected proj
 
 The site uses semantic HTML, a sitemap, robots.txt, Open Graph images, and Person structured data.
 
-GitHub: https://github.com/hershler/portfolio
-
-## Run locally
-
-```bash
-npm run dev
-```
-
-Open http://localhost:3000
+Site link: https://rachel-rubin.netlify.app
